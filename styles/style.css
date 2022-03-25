@@ -1036,6 +1036,40 @@ body a {
   margin: 0;
 }
 
+/* Control */
+.filter-checkbox {
+  position: relative;
+  display: block;
+  padding-left: 19px;
+}
+
+.control-input {
+  appearance: none;
+  top: 4px;
+  left: -4px;
+  width: 20px;
+  height: 20px;
+  margin: 0;
+  border:#e7f0f6
+}
+
+
+.control-input::before {
+  content: "";
+  background-image: url("../images/icons/icon-tick.svg");
+  width: 12px;
+  height: 10px;
+  border: none;
+  background-position: center;
+  position: absolute;
+  padding: 6px 4px;
+  left: 0;
+  background-repeat: no-repeat;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 4px;
+}
+
+
 .button-form {
   height: 50px;
   background: #f2f2f2;
@@ -1255,10 +1289,10 @@ body a {
   line-height: 26px;
 }
 
-.control-input {
-  width: 20px;
-  height: 20px;
+.housing {
+  marginn-left: 67px;
 }
+
 
 .fields {
   margin: 0;
