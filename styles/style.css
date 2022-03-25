@@ -1040,7 +1040,7 @@ body a {
 .filter-checkbox {
   position: relative;
   display: block;
-  padding-left: 19px;
+  padding: 0;
 }
 
 .control-input {
@@ -1050,25 +1050,42 @@ body a {
   width: 20px;
   height: 20px;
   margin: 0;
-  border:#e7f0f6
-}
-
-
-.control-input::before {
-  content: "";
-  background-image: url("../images/icons/icon-tick.svg");
-  width: 12px;
-  height: 10px;
-  border: none;
-  background-position: center;
-  position: absolute;
-  padding: 6px 4px;
-  left: 0;
-  background-repeat: no-repeat;
-  background-color: rgba(255, 255, 255, 0.6);
+  margin-right: 19px;
+  background-color: #ffffff;
   border-radius: 4px;
 }
 
+.control-input:checked {
+  content: "";
+  background-image: url("../images/icons/icon-tick.svg");
+  border: none;
+  background-position: center;
+  left: 0;
+  background-repeat: no-repeat;
+  background-color: #ffffff;
+  border-radius: 4px;
+}
+
+.control-input-radio {
+  appearance: none;
+  top: 4px;
+  left: -4px;
+  width: 20px;
+  height: 20px;
+  margin: 0;
+  margin-right: 19px;
+  background-color: #ffffff;
+  border-radius: 100%;
+}
+
+.control-input-radio:checked {
+  content: "";
+  background-image: url("../images/icons/icon-ellipse.svg");
+  background-position: center;
+  left: 0;
+  background-repeat: no-repeat;
+  background-color: #ffffff;
+}
 
 .button-form {
   height: 50px;
